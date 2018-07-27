@@ -1,4 +1,5 @@
 commitTime=$(date)
+git checkout master
 git add .
 git commit -m "$commitTime commit with merged branch"
 git push origin master

@@ -1,0 +1,19 @@
+F:/trunk/env1/client\OgreMainExt\Global.h:17: static data 'xxtea_key_'
+F:/trunk/env1/client\OgreMainExt\Global.h:17: unused variable 'xxtea_key_'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.cpp:233: static data 'JavaMethodInvokerFactory::MAX_POOL_SIZE'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.cpp:234: static data 'JavaMethodInvokerFactory::s_PoolSize'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.cpp:235: static data 'JavaMethodInvokerFactory::s_Pool'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.h:75: static data 's_Pool'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.h:76: static data 's_PoolSize'
+F:/trunk/env1/client\OgreMainExt\JavaMethodInvoker.h:77: static data 'MAX_POOL_SIZE'
+F:/trunk/env1/client\OgreMainExt\OgreAnimationPlayer.cpp:316: 'AnimPlayTrackPred' not found in expected header 'F:/trunk/env1/client\OgreMainExt\OgreAnimationPlayer.h' or any other directly #included header
+F:/trunk/env1/client\OgreMainExt\OgreCompress.cpp:18: static data 'CompressTool::errpath'
+F:/trunk/env1/client\OgreMainExt\OgreCompress.h:15: 'functional' already #included on line 10
+F:/trunk/env1/client\OgreMainExt\OgreCompress.h:101: static data 'errpath'
+F:/trunk/env1/client\OgreMainExt\OgreDownloadDef.h:5: 'OgreLog.h' does not need to be #included
+F:/trunk/env1/client\OgreMainExt\OgreDownloadManager.cpp:12: unable to find 'shlwapi.h'
+F:/trunk/env1/client\OgreMainExt\OgreDownloadManager.h:13: 'OgreFileManagerWeb.h' does not need to be #included
+F:/trunk/env1/client\OgreMainExt\OgreDownloader.cpp:27: static data 'Downloader::msNumInsts'
+F:/trunk/env1/client\OgreMainExt\OgreDownloader.cpp:28: static data 'Downloader::m_need_gzip'
+F:/trunk/env1/client\OgreMainExt\OgreDownloader.h:85: static data 'msNumInsts'
+F:/trunk/env1/client\OgreMainExt\OgreDownloader.h:86: static data 'm_need_gzip'

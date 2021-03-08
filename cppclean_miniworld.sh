@@ -1,20 +1,26 @@
-outputFile=../cppclean_miniworld_result.log
+outputFile=cppclean_miniworld_result.log
 
-basePath=/f/trunk/env1/client
+clientPath=/f/trunk/env1/client
 
-iworldPath=$basePath/iworld
+androidbuildPath=/f/trunk/env1/androidbuild
 
-iworldcustomPath=$basePath/iworldcustom
+iworldPath=$clientPath/iworld
 
-iworldminicodePath=$basePath/iworldminicode
+iworldcustomPath=$clientPath/iworldcustom
 
-OgreMainExtPath=$basePath/OgreMainExt
+iworldminicodePath=$clientPath/iworldminicode
 
-OgreMainPath=$basePath/OgreMain
+OgreMainExtPath=$clientPath/OgreMainExt
 
-scriptsupportPath=$basePath/scriptsupport
+OgreMainPath=$clientPath/OgreMain
 
-platformPath=$basePath/platform
+scriptsupportPath=$clientPath/scriptsupport
+
+platformPath=$clientPath/platform
+
+commonPath=$androidbuildPath/AppPlay/Common
+
+jniPath=$androidbuildPath/AppPlay/Proj.Android/jni
 
 iteratedPaths[${#iteratedPaths[*]}]=$iworldPath
 iteratedPaths[${#iteratedPaths[*]}]=$iworldcustomPath
@@ -23,6 +29,8 @@ iteratedPaths[${#iteratedPaths[*]}]=$OgreMainExtPath
 iteratedPaths[${#iteratedPaths[*]}]=$OgreMainPath
 iteratedPaths[${#iteratedPaths[*]}]=$scriptsupportPath
 iteratedPaths[${#iteratedPaths[*]}]=$platformPath
+iteratedPaths[${#iteratedPaths[*]}]=$commonPath
+iteratedPaths[${#iteratedPaths[*]}]=$jniPath
 
 includedPaths="$includedPaths --include-path=$iworldPath"
 includedPaths="$includedPaths --include-path=$iworldcustomPath"
@@ -31,6 +39,11 @@ includedPaths="$includedPaths --include-path=$OgreMainExtPath"
 includedPaths="$includedPaths --include-path=$OgreMainPath"
 includedPaths="$includedPaths --include-path=$scriptsupportPath"
 includedPaths="$includedPaths --include-path=$platformPath"
+includedPaths="$includedPaths --include-path=$commonPath"
+includedPaths="$includedPaths --include-path=$jniPath"
+
+includedPaths="$includedPaths --exclude=CPython"
+includedPaths="$includedPaths --exclude=MakeWebPatchTools"
 
 for (( i = 0; i < ${#iteratedPaths[*]}; ++i ))
 do
@@ -48,4 +61,4 @@ do
 done
 
 # echo $includedPaths
-cppclean $includedPaths $basePath > $outputFile
+cppclean $includedPaths $clientPath > $outputFile
